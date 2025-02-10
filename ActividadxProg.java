@@ -47,38 +47,46 @@ public class ActividadxProg {
         }
     }
 
-    private static void realizarOperacionesMatematicas(Scanner scanner) {
-        System.out.println("Operaciones disponibles: suma, resta, multiplicación, división");
-        System.out.print("Introduce la operación: ");
-        String operacion = scanner.nextLine();
-        System.out.print("Introduce el primer número: ");
-        double num1 = scanner.nextDouble();
-        System.out.print("Introduce el segundo número: ");
-        double num2 = scanner.nextDouble();
-
-        double resultado;
-        switch (operacion.toLowerCase()) {
-            case "suma":
-                resultado = num1 + num2;
-                break;
-            case "resta":
-                resultado = num1 - num2;
-                break;
-            case "multiplicación":
-                resultado = num1 * num2;
-                break;
-            case "división":
+    /** El método calcular, realizar una suma, resta, multiplicación o división 
+	 * según los números y operador que introduzcamos.
+	 * @param num1 Primer número
+	 * @param num2 Segundo número
+	 * @param operador Operador de suma, resta, multiplicación o división
+	 * @return La suma, resta, multiplicación o división
+	 * @throws IllegalArgumentException Si el número se divide por 0
+	 * @throws IllegalArgumentException Si el operador no es válido*/
+	public double calcular(double num1, double num2, String operador) throws IllegalArgumentException {
+		
+        switch (operador) {
+        
+            case "+":
+            	
+                return num1 + num2;
+                
+            case "-":
+            	
+                return num1 - num2;
+                
+            case "*":
+            	
+                return num1 * num2;
+                
+            case "/":
+            	
                 if (num2 == 0) {
-                    System.out.println("Error: División por cero.");
-                    return;
+                	
+                    throw new IllegalArgumentException("División por cero.");
+                    
                 }
-                resultado = num1 / num2;
-                break;
+                
+                return num1 / num2;
+                
             default:
-                System.out.println("Operación no válida.");
-                return;
+            	
+                throw new IllegalArgumentException("Operador no válido.");
+                
         }
-        System.out.println("El resultado es: " + resultado);
+        
     }
 
     private static void realizarSumaMatrices(Scanner scanner) {
