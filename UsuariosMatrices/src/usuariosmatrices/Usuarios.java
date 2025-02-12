@@ -66,23 +66,39 @@ public class Usuarios {
     	
     	switch (operacion) { // switch case con la operación que introduzcamos
         	case "suma": // en el caso de suma suma los dos números
-            	System.out.println("Resultado: " + (num1 + num2));
+            	System.out.println("Resultado: " + sumar(num1,num2));
             	break;
         	case "resta": // en el caso de resta los resta
-            	System.out.println("Resultado: " + (num1 - num2));
+            	System.out.println("Resultado: " + restar(num1,num2));
             	break;
         	case "multiplicación": // para multiplicación los multiplica
-            	System.out.println("Resultado: " + (num1 * num2));
+            	System.out.println("Resultado: " + multiplicar(num1,num2));
             	break;
         	case "división": // para división los divide
             	if (num2 == 0) { // si se divide entre 0 da error
                 	throw new IllegalArgumentException("No se puede dividir por cero.");
             	}
-            	System.out.println("Resultado: " + (num1 / num2));
+            	System.out.println("Resultado: " + dividir(num1,num2));
             	break;
         	default: // por defecto la operación no es válida
         		throw new IllegalArgumentException("Operación no válida.");
     	}
+    }
+    
+    private static double sumar(double num1, double num2) {
+    	return num1 + num2;
+    }
+    
+    private static double restar(double num1, double num2) {
+    	return num1 - num2;
+    }
+    
+    private static double multiplicar(double num1, double num2) {
+    	return num1 * num2;
+    }
+    
+    private static double dividir(double num1, double num2) {
+    	return num1 / num2;
     }
     
     private static void realizarSumaMatrices(Scanner scanner) {
