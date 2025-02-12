@@ -85,18 +85,34 @@ public class Usuarios {
     	}
     }
     
+    /** Suma dos números.
+     * @param num1 Primer número.
+     * @param num2 Segundo número.
+     * @return El resultado de la suma.*/
     private static double sumar(double num1, double num2) {
     	return num1 + num2;
     }
     
+    /** Resta dos números.
+     * @param num1 Primer número.
+     * @param num2 Segundo número.
+     * @return El resultado de la resta.*/
     private static double restar(double num1, double num2) {
     	return num1 - num2;
     }
     
+    /** Multiplica dos números.
+     * @param num1 Primer número.
+     * @param num2 Segundo número.
+     * @return El resultado de la multiplicación.*/
     private static double multiplicar(double num1, double num2) {
     	return num1 * num2;
     }
     
+    /** Divide dos números.
+     * @param num1 Primer número.
+     * @param num2 Segundo número.
+     * @return El resultado de la división.*/
     private static double dividir(double num1, double num2) {
     	return num1 / num2;
     }
