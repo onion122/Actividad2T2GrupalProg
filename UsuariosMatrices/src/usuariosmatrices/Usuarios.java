@@ -57,30 +57,30 @@ public class Usuarios {
     private static void calcular(Scanner scanner) {
  
     	System.out.print("Ingrese la operación (suma, resta, multiplicación, división): ");
-    	String operacion = scanner.nextLine();
+    	String operacion = scanner.nextLine(); // scanner de la operación
     	System.out.print("Ingrese el primer número: ");
-    	double num1 = scanner.nextDouble();
+    	double num1 = scanner.nextDouble(); // scanner del primer número
     	System.out.print("Ingrese el segundo número: ");
-    	double num2 = scanner.nextDouble();
+    	double num2 = scanner.nextDouble(); // scanner del segundo número
     	scanner.close();
     	
-    	switch (operacion) {
-        	case "suma":
+    	switch (operacion) { // switch case con la operación que introduzcamos
+        	case "suma": // en el caso de suma suma los dos números
             	System.out.println("Resultado: " + (num1 + num2));
             	break;
-        	case "resta":
+        	case "resta": // en el caso de resta los resta
             	System.out.println("Resultado: " + (num1 - num2));
             	break;
-        	case "multiplicación":
+        	case "multiplicación": // para multiplicación los multiplica
             	System.out.println("Resultado: " + (num1 * num2));
             	break;
-        	case "división":
-            	if (num2 == 0) {
+        	case "división": // para división los divide
+            	if (num2 == 0) { // si se divide entre 0 da error
                 	throw new IllegalArgumentException("No se puede dividir por cero.");
             	}
             	System.out.println("Resultado: " + (num1 / num2));
             	break;
-        	default:
+        	default: // por defecto la operación no es válida
         		throw new IllegalArgumentException("Operación no válida.");
     	}
     }
