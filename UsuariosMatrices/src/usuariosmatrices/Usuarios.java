@@ -4,12 +4,14 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 public class Usuarios {
+	
 	private static final String USUARIO1 = "usuario1";
-    private static final String CONTRASENA1 = "clave123";
-    private static final String USUARIO2 = "usuario2";
-    private static final String CONTRASENA2 = "clave456";
+	private static final String CONTRASENA1 = "clave123";
+	private static final String USUARIO2 = "usuario2";
+	private static final String CONTRASENA2 = "clave456";
 
     public static void main(String[] args) {
+    	
         Scanner scanner = new Scanner(System.in);
         try {
             System.out.print("Introduce el usuario: ");
@@ -53,6 +55,7 @@ public class Usuarios {
     	System.out.print("Ingrese el segundo número: ");
     	double num2 = scanner.nextDouble();
     	scanner.close();
+    	
     	switch (operacion) {
         	case "suma":
             	System.out.println("Resultado: " + (num1 + num2));
@@ -73,6 +76,7 @@ public class Usuarios {
         		throw new IllegalArgumentException("Operación no válida.");
     	}
     }
+    
     private static void realizarSumaMatrices(Scanner scanner) {
         System.out.print("Introduce el número de filas: ");
         int filas = scanner.nextInt();
