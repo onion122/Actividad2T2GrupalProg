@@ -46,6 +46,14 @@ public class Usuarios {
         }
     }
     
+	/** El método calcular, realizar una suma, resta, multiplicación o división 
+	 * según los números y operador que introduzcamos. Usa la clase Scanner
+	 * para obtener los números.
+	 * @param scanner Escanea la operación y los números.
+	 * @throws IllegalArgumentException Si el número se divide por 0.
+	 * @throws IllegalArgumentException Si el operador no es válido.
+	 * @author Javier
+	 * @since 2025*/
     private static void calcular(Scanner scanner) {
  
     	System.out.print("Ingrese la operación (suma, resta, multiplicación, división): ");
