@@ -131,9 +131,9 @@ public class Usuarios {
      * @param scanner Objeto Scanner para leer los datos introducidos por el usuario.
      */
     private static void realizarSumaMatrices(Scanner scanner) {
-        System.out.print("Introduce el n�mero de filas: ");
+        System.out.print("Introduce el número de filas: ");
         int filas = scanner.nextInt();
-        System.out.print("Introduce el n�mero de columnas: ");
+        System.out.print("Introduce el número de columnas: ");
         int columnas = scanner.nextInt();
 
         int[][] matriz1 = new int[filas][columnas];
