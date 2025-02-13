@@ -86,9 +86,9 @@ public class Usuarios {
     }
     
     /**
-     * Suma dos números.
-     * @param num1 Primer número.
-     * @param num2 Segundo número.
+     * Suma dos nÃºmeros.
+     * @param num1 Primer nÃºmero.
+     * @param num2 Segundo nÃºmero.
      * @return La suma de num1 y num2.
      */
     private static double sumar(double num1, double num2) {
@@ -96,9 +96,9 @@ public class Usuarios {
     }
 
     /**
-     * Resta dos números.
-     * @param num1 Primer número.
-     * @param num2 Segundo número.
+     * Resta dos nÃºmeros.
+     * @param num1 Primer nÃºmero.
+     * @param num2 Segundo nÃºmero.
      * @return La resta de num1 menos num2.
      */
     private static double restar(double num1, double num2) {
@@ -106,9 +106,9 @@ public class Usuarios {
     }
 
     /**
-     * Multiplica dos números.
-     * @param num1 Primer número.
-     * @param num2 Segundo número.
+     * Multiplica dos nÃºmeros.
+     * @param num1 Primer nÃºmero.
+     * @param num2 Segundo nÃºmero.
      * @return El producto de num1 y num2.
      */
     private static double multiplicar(double num1, double num2) {
@@ -116,16 +116,12 @@ public class Usuarios {
     }
 
     /**
-     * Divide dos números.
+     * Divide dos nÃºmeros.
      * @param num1 Dividendo.
      * @param num2 Divisor.
      * @return El cociente de num1 entre num2.
-     * @throws ArithmeticException Si num2 es 0.
      */
     private static double dividir(double num1, double num2) {
-        if (num2 == 0) {
-            throw new ArithmeticException("No se puede dividir por cero.");
-        }
         return num1 / num2;
     }
 
@@ -135,9 +131,9 @@ public class Usuarios {
      * @param scanner Objeto Scanner para leer los datos introducidos por el usuario.
      */
     private static void realizarSumaMatrices(Scanner scanner) {
-        System.out.print("Introduce el número de filas: ");
+        System.out.print("Introduce el nï¿½mero de filas: ");
         int filas = scanner.nextInt();
-        System.out.print("Introduce el número de columnas: ");
+        System.out.print("Introduce el nï¿½mero de columnas: ");
         int columnas = scanner.nextInt();
 
         int[][] matriz1 = new int[filas][columnas];
@@ -172,4 +168,4 @@ public class Usuarios {
             System.out.println();
         }
     }
-
+}
